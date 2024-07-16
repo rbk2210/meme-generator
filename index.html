@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generador de memes by RBK</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <h1>Generador de memes by RBK</h1>
+    <div class="check-container" id="check-container">
+        <div class="check">
+            <label for="">Horizontal</label>
+            <input type="checkbox" name="horizontal" id="horizontal" checked>
+            <label for="">Vertical</label>
+            <input type="checkbox" name="vertical" id="vertical">
+        </div>
+    </div>
+    <div class="input-container">
+        <input type="file" name="file" id="file">
+        <label for="file" id="labelFile">Seleccionar Imagen</label>
+        <div class="textContainer">
+            <input type="text" name="" id="superior" placeholder="  Ingrese el texto superior">
+            <button id="addSuperior">Añadir</button>
+            <input type="text" name="" id="inferior" placeholder="  Ingrese el texto inferior">
+            <button id="addInferior">Añadir</button>
+        </div>
+    </div>
+    <div class="meme-container">
+        <h2 id="textSup"></h2>
+        <img src="" alt="" class="img">
+        <h2 id="textInf"></h2>
+    </div>
+    <div class="downloadContainer">
+        <button for="download" id="download">descargar</button>
+        <label for="download" id="labelDownload">Descargar</label>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
